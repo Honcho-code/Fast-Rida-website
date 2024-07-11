@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'MuseoModerno', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    /* overflow: hidden; */
+}
+:root{
+    --Primary-color:#434343;
+    --Secondary-color: #f5f5f5;
+    --main-color: #2C6AC6;
+    --Stroke-color: #A0A0A0;
+    --Tertiary-color: #DCDCDC;
+    --Black-color: #000;
+    --White-color: #ffff;
+    --big-font: 5.5rem;
+    --p-font: 1rem;
+}
+body{
+    background: var(--White-color);
+    color: var(--Black-color);
+}
+header{
+    background: var(--Secondary-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 27px 4%;
+    transition: all ease .55s;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black-color);
+}
+.logo i{
+    font-size: 35px;
+    vertical-align: middle;
+    color: var(--main-color);
+    margin-right: 5px;
+}
+.Navbar{
+    display: flex;
+}
+.Navbar a{
+    font-size: var(--p-font);
+    color: var(--Stroke-color);
+    margin: 0 35px;
+    font-weight: 600;
+    transition: color .55s;
+}
+.Navbar a:hover{
+    color: var(--main-color);
+}
+.Navbar .Active{
+    color: var(--main-color);
+}
+.Cta{
+    display: inline-block;
+    color: var(--White-color);
+    background: var(--main-color);
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    transition: all ease .55s;
+}
+.Cta:hover{
+    background: none;
+    color: var(--main-color);
+}
+.Discover{
+    margin-top: 9%;
+    text-align: center;
+}
+.Discover p{
+    letter-spacing: 1px;
+    color: var(--Primary-color);
+}
+.search{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.search input{
+    height: 40px;
+    width: 500px;
+    padding-left: 15px;
+    background: var(--Secondary-color);
+    border-color: var(--Stroke-color);
+    border-style: solid;
+    border-radius: 3px;
+}
+.search button{
+    width: 40px;
+    background: var(--main-color);
+    color: var(--White-color);
+    border-style: solid;
+    border-color: var(--main-color);
+    border-radius: 3px;
+    margin-left: 10px;
+    transition: all ease .55s;
+}
+.search button:hover{
+    background: none;
+    color: var(--main-color);
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 9%;
+    margin-top: 50px;
+}
+.top .sortby{
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.top .drop{
+    font-size: 13px;
+    background: var(--Tertiary-color);
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+.card-1{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 9%;
+
+}
+.card{
+    width: 400px;
+    height: 430px;
+    
+    background: var(--Secondary-color);
+}
+.card img{
+    width: 400px;
+    object-fit: contain;
+    padding: 10px;
+
+}
+.card h2{
+    font-size: 20px;
+    font-size: 600;
+    color: var(--Black-color);
+    padding-left: 10px;
+}
+.card p{
+    font-size: 14px;
+    color: var(--Black-color);
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.hotel{
+    display: flex;
+    justify-content: space-between;
+}
+.hotel a{
+    background: var(--main-color);
+    color: var(--White-color);
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 10px;
+}
+.hotel i{
+    background: var(--Tertiary-color);
+    color: var(--Primary-color);
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.foot{
+    display: flex;
+    background: var(--main-color);
+    margin: 0 0;
+
+    /* padding: 30px 9%; */
+}
+.foot-set{
+    padding: 30px 9%;
+}
+.foot-set .foot-logo{
+    color: var(--White-color);
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.foot p{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--Tertiary-color);
+    padding-top: 20px;
+}
+.menu{
+    text-align: left;
+    align-items: center;
+    /* padding: 0 20%; */
+    margin: 4% 8%;
+}
+.foot-menu a{
+    color: var(--Secondary-color);
+    font-size: 14px;
+    font-weight: 300;
+}
+.foot-menu .link{
+    color: var(--White-color);
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
